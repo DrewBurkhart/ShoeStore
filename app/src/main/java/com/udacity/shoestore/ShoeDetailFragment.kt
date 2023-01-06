@@ -44,6 +44,7 @@ class ShoeDetail : Fragment() {
                         description = viewModel.shoe.description
                     )
                 )
+                viewModel.resetShoe()
                 v.findNavController()
                     .navigate(ShoeDetailDirections.actionShoeDetailToShoeListFragment())
             } else {

@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import com.udacity.shoestore.models.Shoe
 
 class ShoeViewModel : ViewModel() {
-    val shoe = Shoe("", 0.0, "", "")
+    var shoe = Shoe("", 0.0, "", "")
 
     private val _shoesList = MutableLiveData<MutableList<Shoe>>()
     val shoesList: LiveData<MutableList<Shoe>>
@@ -19,6 +19,10 @@ class ShoeViewModel : ViewModel() {
         } else {
             _shoesList.value?.add(newShoe)
         }
+    }
+
+    fun resetShoe() {
+        shoe = Shoe("", 0.0, "", "")
     }
 
     fun validate(): Boolean {

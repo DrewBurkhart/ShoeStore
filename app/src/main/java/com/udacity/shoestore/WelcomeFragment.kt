@@ -27,7 +27,7 @@ class WelcomeFragment : Fragment() {
             container,
             false)
 
-        binding.button2.setOnClickListener { v: View ->
+        binding.instructionsButton.setOnClickListener { v: View ->
             v.findNavController().navigate(WelcomeFragmentDirections.actionWelcomeFragmentToInstructionFragment())
         }
 

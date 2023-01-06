@@ -27,7 +27,7 @@ class InstructionFragment : Fragment() {
             container,
             false)
 
-        binding.button2.setOnClickListener { v: View ->
+        binding.storeButton.setOnClickListener { v: View ->
             v.findNavController().navigate(InstructionFragmentDirections.actionInstructionFragmentToShoeListFragment())
         }
 

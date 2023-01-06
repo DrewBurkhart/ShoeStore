@@ -70,12 +70,12 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="32dp"
             android:text="@string/create_account"
-            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintEnd_toStartOf="@+id/sign_in_button"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/password_text_field" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/sign_in_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"

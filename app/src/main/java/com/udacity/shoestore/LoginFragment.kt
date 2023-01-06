@@ -31,7 +31,7 @@ class LoginFragment : Fragment() {
             v.findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
         }
 
-        binding.button2.setOnClickListener { v: View ->
+        binding.signInButton.setOnClickListener { v: View ->
             v.findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
         }
 

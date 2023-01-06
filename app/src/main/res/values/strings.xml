@@ -23,4 +23,7 @@
     <string name="enter_shoe_name">Enter shoe name</string>
     <string name="shoe_name">Shoe Name</string>
     <string name="add_shoe_button">Add Shoe Button</string>
+    <string name="welcome_instructions_1">On the next screen you will see the list of shoes. You can add a show using the plus button at the bottom.</string>
+    <string name="welcome_instructions_2">Please click below to continue.</string>
+    <string name="logout">Logout</string>
 </resources>

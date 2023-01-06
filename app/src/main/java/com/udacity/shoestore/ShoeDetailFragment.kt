@@ -37,10 +37,10 @@ class ShoeDetail : Fragment() {
             if (viewModel.validate()) {
                 viewModel.addShoeToList(
                     Shoe(
-                        name = viewModel.shoeName.value ?: "",
-                        size = viewModel.shoeSize.value?.toDouble() ?: 0.0,
-                        company = viewModel.shoeCompany.value ?: "",
-                        description = viewModel.shoeDescription.value ?: ""
+                        _name = viewModel.shoeName.value ?: "",
+                        _size = viewModel.shoeSize.value?.toDouble() ?: 0.0,
+                        _company = viewModel.shoeCompany.value ?: "",
+                        _description = viewModel.shoeDescription.value ?: ""
                     )
                 )
                 viewModel.resetShoe()

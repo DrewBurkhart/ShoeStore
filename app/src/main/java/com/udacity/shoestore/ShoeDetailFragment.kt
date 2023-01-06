@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
@@ -59,6 +60,9 @@ class ShoeDetail : Fragment() {
             v.findNavController()
                 .navigate(ShoeDetailDirections.actionShoeDetailToShoeListFragment())
         }
+
+        // https://stackoverflow.com/a/60597473
+        (requireActivity() as AppCompatActivity).supportActionBar?.title = "Add Shoe"
 
         return binding.root
     }

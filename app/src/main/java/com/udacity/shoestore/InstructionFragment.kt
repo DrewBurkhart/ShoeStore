@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.udacity.shoestore.databinding.FragmentInstructionBinding
@@ -25,6 +26,9 @@ class InstructionFragment : Fragment() {
         binding.storeButton.setOnClickListener { v: View ->
             v.findNavController().navigate(InstructionFragmentDirections.actionInstructionFragmentToShoeListFragment())
         }
+
+        // https://stackoverflow.com/a/60597473
+        (requireActivity() as AppCompatActivity).supportActionBar?.title = "Instructions"
 
         return binding.root
     }

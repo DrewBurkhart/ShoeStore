@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.udacity.shoestore.databinding.FragmentWelcomeBinding
@@ -25,6 +26,9 @@ class WelcomeFragment : Fragment() {
         binding.instructionsButton.setOnClickListener { v: View ->
             v.findNavController().navigate(WelcomeFragmentDirections.actionWelcomeFragmentToInstructionFragment())
         }
+
+        // https://stackoverflow.com/a/60597473
+        (requireActivity() as AppCompatActivity).supportActionBar?.title = "Welcome"
 
         return binding.root
     }

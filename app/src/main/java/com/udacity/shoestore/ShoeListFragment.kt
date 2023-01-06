@@ -15,6 +15,7 @@ import com.udacity.shoestore.viewmodels.ShoeViewModel
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
 
 class ShoeListFragment : Fragment() {
@@ -44,6 +45,9 @@ class ShoeListFragment : Fragment() {
         binding.addShoeButton.setOnClickListener { v: View ->
             v.findNavController().navigate(ShoeListFragmentDirections.actionShoeListFragmentToShoeDetail())
         }
+
+        // https://stackoverflow.com/a/60597473
+        (requireActivity() as AppCompatActivity).supportActionBar?.title = "Shoe List"
 
         return binding.root
     }

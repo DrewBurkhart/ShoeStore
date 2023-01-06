@@ -22,4 +22,5 @@
     <string name="company">Company</string>
     <string name="enter_shoe_name">Enter shoe name</string>
     <string name="shoe_name">Shoe Name</string>
+    <string name="add_shoe_button">Add Shoe Button</string>
 </resources>

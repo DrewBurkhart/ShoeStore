@@ -10,7 +10,6 @@ import com.udacity.shoestore.databinding.ActivityMainBinding
 import timber.log.Timber
 
 class MainActivity : AppCompatActivity() {
-
     private lateinit var appBarConfiguration : AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {

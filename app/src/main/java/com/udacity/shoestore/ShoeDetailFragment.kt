@@ -15,16 +15,18 @@ import com.udacity.shoestore.databinding.FragmentShoeDetailBinding
  * create an instance of this fragment.
  */
 class ShoeDetail : Fragment() {
+    private lateinit var binding: FragmentShoeDetailBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        val binding: FragmentShoeDetailBinding = DataBindingUtil.inflate(
+    ): View {
+        binding = DataBindingUtil.inflate(
             inflater,
             R.layout.fragment_shoe_detail,
             container,
-            false)
+            false
+        )
 
         binding.saveButton.setOnClickListener { v: View ->
             // TODO: Save shoe

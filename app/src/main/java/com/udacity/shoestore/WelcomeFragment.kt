@@ -15,12 +15,13 @@ import com.udacity.shoestore.databinding.FragmentWelcomeBinding
  * create an instance of this fragment.
  */
 class WelcomeFragment : Fragment() {
+    private lateinit var binding: FragmentWelcomeBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        val binding: FragmentWelcomeBinding = DataBindingUtil.inflate(
+    ): View {
+        binding = DataBindingUtil.inflate(
             inflater,
             R.layout.fragment_welcome,
             container,

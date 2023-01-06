@@ -15,12 +15,13 @@ import com.udacity.shoestore.databinding.FragmentShoeListBinding
  * create an instance of this fragment.
  */
 class ShoeListFragment : Fragment() {
+    private lateinit var binding: FragmentShoeListBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        val binding: FragmentShoeListBinding = DataBindingUtil.inflate(
+    ): View {
+        binding = DataBindingUtil.inflate(
             inflater,
             R.layout.fragment_shoe_list,
             container,

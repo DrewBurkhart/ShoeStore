@@ -9,11 +9,6 @@ import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.udacity.shoestore.databinding.FragmentInstructionBinding
 
-/**
- * A simple [Fragment] subclass.
- * Use the [InstructionFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class InstructionFragment : Fragment() {
     private lateinit var binding: FragmentInstructionBinding
 

@@ -17,11 +17,6 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import androidx.navigation.fragment.findNavController
 
-/**
- * A simple [Fragment] subclass.
- * Use the [ShoeListFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class ShoeListFragment : Fragment() {
     private lateinit var binding: FragmentShoeListBinding
     private lateinit var viewModel: ShoeViewModel

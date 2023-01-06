@@ -13,11 +13,6 @@ import com.udacity.shoestore.databinding.FragmentShoeDetailBinding
 import com.udacity.shoestore.models.Shoe
 import com.udacity.shoestore.viewmodels.ShoeViewModel
 
-/**
- * A simple [Fragment] subclass.
- * Use the [ShoeDetail.newInstance] factory method to
- * create an instance of this fragment.
- */
 class ShoeDetail : Fragment() {
     private lateinit var binding: FragmentShoeDetailBinding
     private lateinit var viewModel: ShoeViewModel

@@ -16,18 +16,6 @@
         android:padding="20dp">
 
         <TextView
-            android:id="@+id/company_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/company"
-            android:textColor="@android:color/black"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name_label" />
-
-        <TextView
             android:id="@+id/name_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,46 +27,45 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <TextView
+            android:id="@+id/company_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/company"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_label" />
+
 
         <TextView
             android:id="@+id/size_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text="@string/shoe_size"
             android:textColor="@android:color/black"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/company_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/company_label" />
 
         <TextView
             android:id="@+id/desc_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text="@string/description"
             android:textColor="@android:color/black"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/size_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/size_label" />
-
-        <TextView
-            android:id="@+id/desc_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="@{shoe.description}"
-            app:layout_constraintStart_toEndOf="@+id/desc_label"
-            app:layout_constraintTop_toBottomOf="@+id/size_text" />
-
-
-        <TextView
-            android:id="@+id/size_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="@{shoe.description}"
-            app:layout_constraintStart_toEndOf="@+id/size_label"
-            app:layout_constraintTop_toBottomOf="@+id/company_text" />
-<!--            android:text="@{shoe.size}"-->
 
         <TextView
             android:id="@+id/name_text"
@@ -97,6 +84,25 @@
             android:text="@{shoe.company}"
             app:layout_constraintStart_toEndOf="@+id/company_label"
             app:layout_constraintTop_toBottomOf="@+id/name_text" />
+
+        <TextView
+            android:id="@+id/size_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@{shoe.description}"
+            app:layout_constraintStart_toEndOf="@+id/size_label"
+            app:layout_constraintTop_toBottomOf="@+id/company_text" />
+        <!--            android:text="@{shoe.size}"-->
+
+        <TextView
+            android:id="@+id/desc_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@{shoe.description}"
+            app:layout_constraintStart_toEndOf="@+id/desc_label"
+            app:layout_constraintTop_toBottomOf="@+id/size_text" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

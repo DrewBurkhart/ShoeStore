@@ -34,14 +34,13 @@ class ShoeDetail : Fragment() {
         binding.lifecycleOwner = this
 
         binding.saveButton.setOnClickListener { v: View ->
-            // TODO: Save shoe
             if (viewModel.validate()) {
                 viewModel.addShoeToList(
                     Shoe(
-                        name = viewModel.shoe.name,
-                        size = viewModel.shoe.size,
-                        company = viewModel.shoe.company,
-                        description = viewModel.shoe.description
+                        name = viewModel.shoeName.value ?: "",
+                        size = viewModel.shoeSize.value?.toDouble() ?: 0.0,
+                        company = viewModel.shoeCompany.value ?: "",
+                        description = viewModel.shoeDescription.value ?: ""
                     )
                 )
                 viewModel.resetShoe()

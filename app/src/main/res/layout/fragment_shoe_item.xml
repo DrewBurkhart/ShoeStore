@@ -8,6 +8,8 @@
             type="com.udacity.shoestore.models.Shoe" />
     </data>
 
+    <!--I used a constraint layout here to ensure spacing of the fields,
+    labels and buttons remained consistent and responsive.-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

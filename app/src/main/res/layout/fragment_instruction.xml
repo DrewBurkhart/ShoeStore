@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".InstructionFragment">
 
+    <!--I used a constraint layout here to ensure spacing of the
+    labels and buttons remained consistent and responsive.-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

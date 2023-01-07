@@ -10,6 +10,8 @@
             type="com.udacity.shoestore.viewmodels.ShoeViewModel" />
     </data>
 
+    <!--I used a constraint layout here to avoid nesting linear
+    layouts with each grouping of fields.-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

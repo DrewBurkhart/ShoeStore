@@ -4,6 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!--I used a constraint layout here to nest the contained items
+    and float the button above the scrollview.-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/outer_layout"
         android:layout_width="match_parent"
